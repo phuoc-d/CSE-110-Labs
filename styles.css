@@ -3,14 +3,16 @@
     top: 0;
     overflow: hidden;
     background-color: white;
-    height: 146px;
     width: 100%;
     padding-inline: 10px;
-
   }
 
   #navbar .logo {
     max-width: 400px
+}
+
+img {
+    max-width: 100%;
 }
 
 
@@ -120,3 +122,39 @@ li a:hover {
 } */
 
 
+@media screen and (max-width: 800px) {
+    
+    ul {
+        display: none;
+        height: 60px;
+    }
+
+    li a {
+        display: none;
+    }
+
+    #navbar .logo {
+        max-width: 75%;
+    }
+
+    #navbar {
+        position: static;
+    }
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
